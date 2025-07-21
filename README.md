@@ -27,7 +27,7 @@ server/
 ├── controllers/ # Logic for routes
 ├── models/ # Mongoose models
 ├── routes/ # Express route handlers
-├── middleware/ # Auth, error handling etc.
+├── middleware/
 ├── uploads/ # Uploaded user images
 ├── server.js # Entry point
 └── .env
