@@ -25,7 +25,7 @@ client/
 ### Backend (`/server`)
 server/
 ├── controllers/ # Logic for routes
-├── models/ # Mongoose models (if using MongoDB)
+├── models/ # Mongoose models
 ├── routes/ # Express route handlers
 ├── middleware/ # Auth, error handling etc.
 ├── uploads/ # Uploaded user images
