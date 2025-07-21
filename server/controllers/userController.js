@@ -4,9 +4,11 @@ const Claim = require("../models/Claim");
 const addUser = async (req, res) => {
   try {
     const { name } = req.body;
+    const image = req.file ? `/uploads/${req.file.filename}` : "";
+
     if (!name) return res.status(400).json({ error: "Name is required" });
 
-    const newUser = new User({ name });
+    const newUser = new User({ name, image });
     await newUser.save();
 
     res.status(201).json(newUser);

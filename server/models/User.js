@@ -7,6 +7,10 @@ const userSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
+    image: {
+      type: String,
+      default: "",
+    },
     totalPoints: {
       type: Number,
       default: 0,

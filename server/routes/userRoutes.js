@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const upload = require("../middleware/upload");
 const {
   addUser,
   claimPoints,
@@ -7,7 +8,7 @@ const {
   getLeaderBoard,
 } = require("../controllers/userController");
 
-router.post("/user", addUser);
+router.post("/user", upload.single("image"), addUser);
 
 router.post("/claim", claimPoints);
 
